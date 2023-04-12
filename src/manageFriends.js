@@ -2,7 +2,8 @@ export function manageFriends(state, action) {
   // your code here
   switch(action.type){
     case "friends/add":
-      return {friends: [...state.friend, action.payload],
+      return {
+        friends: [...state.friends, action.payload],
        };
     case "friends/remove":
       return {
